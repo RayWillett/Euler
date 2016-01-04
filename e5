@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+def isDivisible(r, number):
+    for i in range(1, r+1):
+        if ((number % i) != 0):
+            return False
+    return True
+
+    
+j = 2520
+while (not isDivisible(20, j)):
+    j+=10
+print(j)
